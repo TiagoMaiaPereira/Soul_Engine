@@ -5,14 +5,20 @@ namespace Soul
 {
 	class Engine {
 	public:
+
 		void Initialize();
 
+		void StopRunning();
 		
 		bool IsRunning() { return isRunning; }
 
+		static Engine& getEngine() { return *instance; }
+
 	private:
 
-		bool isRunning = true;
+		static Engine* instance;
+
+		bool isRunning = false;
 	};
 
 }

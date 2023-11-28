@@ -20,7 +20,7 @@ namespace Soul {
 	}
 
 	void EventHandler::onQuit() {
-
 		SDL_Quit();
+		Engine::getEngine().StopRunning();
 	}
 }
