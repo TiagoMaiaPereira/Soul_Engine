@@ -19,6 +19,7 @@ namespace Soul
 		static Engine* instance;
 
 		bool isRunning = false;
+
 	};
 
 }

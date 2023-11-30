@@ -1,6 +1,6 @@
-﻿  Engine.cpp
-  EventHandler.cpp
+﻿  EventHandler.cpp
   SDLWindow.cpp
+  Engine.cpp
   spch.cpp
   Generating Code...
-  Soul.vcxproj -> C:\Users\Win10\OneDrive\Documents\Git Projects\Soul_Engine\bin\Debug-x64\Soul\Soul.lib
+  Soul.vcxproj -> C:\Users\tiago\Desktop\Classes\3Y_1S\Advanced Programming Topics\SoulEngine\Soul_Engine\bin\Debug-x64\Soul\Soul.lib
