@@ -20,6 +20,7 @@ namespace Soul
 
 		bool isRunning = false;
 
+
 	};
 
 }
