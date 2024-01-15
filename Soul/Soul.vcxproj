@@ -149,12 +149,14 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\GameEntity.cpp" />
     <ClCompile Include="src\EventHandler.cpp" />
     <ClCompile Include="src\SDLWindow.cpp" />
     <ClCompile Include="src\Engine.cpp" />
     <ClCompile Include="src\spch.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GameEntity.h" />
     <ClInclude Include="src\EventHandler.h" />
     <ClInclude Include="src\SDLWindow.h" />
     <ClInclude Include="src\Engine.h" />
