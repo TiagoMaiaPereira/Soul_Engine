@@ -7,5 +7,7 @@ class Renderer
 public:
 	Renderer(SDL_Window* window, SDL_GLContext glContext);
 
+private:
+	static Renderer* instance;
 };
 
