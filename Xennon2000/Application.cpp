@@ -1,4 +1,5 @@
 #include "spch.h"
+#include "glad/glad.h"
 
 using namespace Soul;
 
@@ -10,6 +11,8 @@ int main(int argc, char** argv)
 	engine.Initialize();
 
 	SDLWindow window("Test Window", 640, 480);
+
+	//Renderer renderer(window.getWindow(), window.getGLContext());
 
 	EventHandler eventHandler;
 

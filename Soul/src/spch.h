@@ -13,3 +13,5 @@
 #include "Engine.h"
 #include "SDLWindow.h"
 #include "EventHandler.h"
+#include "GameEntity.h"
+#include "Renderer.h"
