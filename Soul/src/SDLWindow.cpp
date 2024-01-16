@@ -17,6 +17,8 @@ namespace Soul {
 			SDL_Quit();
 			return;
 		}
+
+		context = SDL_GL_CreateContext(window);
 	}
 
 	SDLWindow::~SDLWindow()

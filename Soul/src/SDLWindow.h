@@ -11,9 +11,11 @@ namespace Soul {
 		~SDLWindow();
 
 		SDL_Window* getWindow() const { return window; }
+		SDL_GLContext getGLContext() const {return context;}
 
 	private:
 		SDL_Window* window = nullptr;
+		SDL_GLContext context = nullptr;
 	};
 
 }
