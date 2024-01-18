@@ -3,14 +3,18 @@
 
 namespace Soul {
 
-	class SDLWindow
+	class Window
 	{
 	public:
-		SDLWindow(const char* title, int width, int height);
+		Window(const char* title, int width, int height);
 
-		~SDLWindow();
+		~Window();
 
 		SDL_Window* getWindow() const { return window; }
+
+		void createWindow();
+
+		void destroyWindow();
 
 	private:
 		SDL_Window* window = nullptr;

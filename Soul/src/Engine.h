@@ -6,7 +6,13 @@ namespace Soul
 	class Engine {
 	public:
 
-		void Initialize();
+		Engine();
+
+		~Engine();
+
+		void Initialize(const char* title, int width, int height);
+
+		void Run();
 
 		void StopRunning();
 		
@@ -19,7 +25,6 @@ namespace Soul
 		static Engine* instance;
 
 		bool isRunning = false;
-
 
 	};
 

@@ -7,9 +7,7 @@ int main(int argc, char** argv)
 {
 	Engine engine;
 
-	engine.Initialize();
-
-	SDLWindow window("Test Window", 640, 480);
+	engine.Initialize("Test Window", 640, 480);
 
 	EventHandler eventHandler;
 
