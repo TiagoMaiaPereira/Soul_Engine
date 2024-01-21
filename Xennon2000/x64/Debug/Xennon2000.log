@@ -1,3 +1,2 @@
 ﻿  Application.cpp
-Soul.lib(Renderer.obj) : error LNK2019: unresolved external symbol gladLoadGLLoader referenced in function "public: __cdecl Renderer::Renderer(struct SDL_Window *,void *)" (??0Renderer@@QEAA@PEAUSDL_Window@@PEAX@Z)
-C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\x64\Debug\Xennon2000.exe : fatal error LNK1120: 1 unresolved externals
+  Xennon2000.vcxproj -> C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\x64\Debug\Xennon2000.exe

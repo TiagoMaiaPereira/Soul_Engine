@@ -1,5 +1,6 @@
 #include "spch.h"
 
+
 using namespace Soul;
 
 
@@ -9,11 +10,15 @@ int main(int argc, char** argv)
 
 	engine.Initialize();
 
+	
+
 	SDLWindow window("Test Window", 640, 480);
 
-	Renderer renderer(window.getWindow(), window.getGLContext());
+	Renderer renderer; 
 
 	EventHandler eventHandler;
+
+
 
 	while (engine.IsRunning()) { //Game Loop
 		eventHandler.handleEvents();//Event Loop

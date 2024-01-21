@@ -149,6 +149,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="glad.c" />
     <ClCompile Include="src\AnimatedSprite.cpp" />
     <ClCompile Include="src\Sprite.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
