@@ -14,17 +14,36 @@ namespace Soul
 
 		void Run();
 
+		void HandleEvents();
+
 		void StopRunning();
+
+		void Clean();
 		
 		bool IsRunning() { return isRunning; }
 
-		static Engine& getEngine() { return *instance; }
+		static Engine* getEngine() { return instance; }
 
 	private:
 
 		static Engine* instance;
 
+
+		float previousTime = 0;
+		float currentTime = 0;
+		float frameTime = 0;
+
+		float deltaTime = 0;
+
 		bool isRunning = false;
+
+		SDL_Window* window = nullptr;
+
+		SDL_Renderer* renderer = nullptr;
+
+		SDL_Event event;
+
+		const Uint8* keyState;
 
 	};
 

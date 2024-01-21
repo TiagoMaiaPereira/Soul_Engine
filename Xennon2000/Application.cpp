@@ -8,13 +8,8 @@ int main(int argc, char** argv)
 	Engine engine;
 
 	engine.Initialize("Test Window", 640, 480);
-
-	EventHandler eventHandler;
-
-	while (engine.IsRunning()) { //Game Loop
-		eventHandler.handleEvents();//Event Loop
-	}
-
+	engine.Run();
+	engine.Clean();
 
 	return 0;
 }
