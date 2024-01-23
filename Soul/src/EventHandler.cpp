@@ -6,7 +6,7 @@ namespace Soul {
 
 	EventHandler::~EventHandler(){}
 
-	void EventHandler::handleEvents() 
+	void EventHandler::handleEvents(float dt) 
 	{
 		SDL_Event event;
 

@@ -26,11 +26,6 @@ namespace Soul {
 
 		if (context == nullptr) {
 			std::cout << "[ERROR]: OpenGL context could not be created!" << std::endl;
-			const char* sdlError = SDL_GetError(); 
-			if (sdlError[0] != '\0') { 
-				std::cout << "[ERROR]: SDL error: " << sdlError << std::endl; 
-				SDL_ClearError();  // Clear the SDL error for subsequent checks 
-			} 
 			SDL_Quit(); 
 			return;
 		}

@@ -10,7 +10,9 @@ namespace Soul {
 
 		virtual ~EventHandler();
 
-		void handleEvents();
+		void handleEvents(float dt);
+
+		bool Keys[1024];
 
 		virtual void onQuit();
 

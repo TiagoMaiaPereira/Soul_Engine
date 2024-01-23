@@ -1,4 +1,5 @@
 #include "spch.h"
+#include "stb_image.h"
 
 
 using namespace Soul;
@@ -6,24 +7,37 @@ using namespace Soul;
 
 int main(int argc, char** argv)
 {
+	int width = 640;
+	int height = 480;
 	Engine engine;
 
-	engine.Initialize();
-
-	
-
-	SDLWindow window("Test Window", 640, 480);
-
-	Renderer renderer; 
+	SDLWindow window("Test Window", width, height);
 
 	EventHandler eventHandler;
 
+	engine.Initialize(width, height);
 
+	int prevTime = 0;
+	int currentTime = 0;
+	float deltaTime = 0;
 
 	while (engine.IsRunning()) { //Game Loop
-		eventHandler.handleEvents();//Event Loop
-	}
+		
+		prevTime = currentTime;
+		currentTime = SDL_GetTicks();
+		deltaTime = (currentTime - prevTime) / 1000.0f;
+		
 
+		eventHandler.handleEvents(deltaTime);
+
+		engine.Update(deltaTime);
+
+		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+
+		engine.Render();
+	}
+	Renderer::Clear();
 
 	return 0;
 }

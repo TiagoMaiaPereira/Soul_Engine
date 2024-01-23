@@ -1,10 +1,10 @@
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\glad.c;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\glad.obj
-C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\AnimatedSprite.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\AnimatedSprite.obj
-C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\Sprite.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\Sprite.obj
+C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\SpriteRenderer.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\SpriteRenderer.obj
+C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\Shader.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\Shader.obj
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\Renderer.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\Renderer.obj
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\GameEntity.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\GameEntity.obj
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\EventHandler.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\EventHandler.obj
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\SDLWindow.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\SDLWindow.obj
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\Engine.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\Engine.obj
 C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\spch.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\spch.obj
-C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\StaticSprite.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\StaticSprite.obj
+C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\Soul\src\Texture.cpp;C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin-int\Debug-x64\Soul\Texture.obj
