@@ -7,6 +7,8 @@
 
 #include <string>
 #include <vector>
+#include <array>
+#include <map>
 
 
 #include "SDL.h"
@@ -15,4 +17,5 @@
 #include "b2_math.h"
 
 #include "Engine.h"
+#include "Renderer.h"
 

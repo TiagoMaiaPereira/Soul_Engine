@@ -1,2 +1,2 @@
-﻿  Application.cpp
-  Xennon2000.vcxproj -> C:\Users\tiago\Desktop\Classes\3Y_1S\Advanced Programming Topics\SoulEngine\Soul_Engine\x64\Debug\Xennon2000.exe
+﻿Soul.lib(Renderer.obj) : error LNK2001: unresolved external symbol "private: static struct SDL_Renderer * Soul::Renderer::renderTarget" (?renderTarget@Renderer@Soul@@0PEAUSDL_Renderer@@EA)
+C:\Users\tiago\Desktop\Classes\3Y_1S\Advanced Programming Topics\SoulEngine\Soul_Engine\x64\Debug\Xennon2000.exe : fatal error LNK1120: 1 unresolved externals
