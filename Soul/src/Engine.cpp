@@ -13,7 +13,7 @@ namespace Soul
 		instance = this;
 		std::cout << "Soul is starting...\n" << std::endl;
 
-		Renderer::LoadShader("sprite.vs","sprite.frag",nullptr,"sprite");
+		Renderer::LoadShader("Shaders/spritevertex.shader","Shaders/spritefrag.shader",nullptr,"sprite");
 
 		glm::mat4 projection = glm::ortho(0.0f,static_cast<float>(width), static_cast<float>(height), 0.f,-1.f, 1.f);
 		Renderer::GetShader("sprite").Use().SetInteger("image", 0);

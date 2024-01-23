@@ -1,9 +1,2 @@
 ﻿  Engine.cpp
-  EventHandler.cpp
-  Renderer.cpp
-  SDLWindow.cpp
-  Shader.cpp
-  SpriteRenderer.cpp
-  spch.cpp
-  Generating Code...
   Soul.vcxproj -> C:\Users\faust\Desktop\IPL\3rdYear\AGPT&CGPJ\Soul_Engine\bin\Debug-x64\Soul\Soul.lib

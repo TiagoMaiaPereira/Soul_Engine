@@ -4,6 +4,7 @@
 #include <sstream>
 #include <fstream>
 
+
 Renderer* Renderer::instance;
 std::map<std::string, Texture> Renderer::Textures;
 std::map<std::string, Shader>  Renderer::Shaders;
@@ -21,25 +22,50 @@ Shader Renderer::LoadShader(const char* vShaderFile, const char* fShaderFile, co
 
 Shader Renderer::loadShaderFromFile(const char* vShaderFile, const char* fShaderFile, const char* gShaderFile)
 {
-    // 1. retrieve the vertex/fragment source code from filePath
+    
+    std::cout << "vertex shader file path:" << vShaderFile << std::endl;
+
+    std::cout << "fragment shader file path:" << fShaderFile << std::endl;
+
     std::string vertexCode;
     std::string fragmentCode;
     std::string geometryCode;
     try
     {
-        // open files
+
         std::ifstream vertexShaderFile(vShaderFile);
         std::ifstream fragmentShaderFile(fShaderFile);
         std::stringstream vShaderStream, fShaderStream;
-        // read file's buffer contents into streams
+
         vShaderStream << vertexShaderFile.rdbuf();
+
+        vertexShaderFile.seekg(0, std::ios::beg);
+
         fShaderStream << fragmentShaderFile.rdbuf();
-        // close file handlers
+
+        fragmentShaderFile.seekg(0, std::ios::beg);
+
+        if (!vertexShaderFile.is_open()) { 
+            std::cerr << "Failed to open vertex shader file!" << std::endl;
+            // Handle the error
+        }
+
+        if (!fragmentShaderFile.is_open()) {
+            std::cerr << "Failed to open fragment shader file!" << std::endl;
+            // Handle the error
+        }
+
         vertexShaderFile.close();
         fragmentShaderFile.close();
-        // convert stream into string
+
         vertexCode = vShaderStream.str();
+
+
+
         fragmentCode = fShaderStream.str();
+
+
+
         // if geometry shader path is present, also load a geometry shader
         if (gShaderFile != nullptr)
         {
@@ -58,6 +84,12 @@ Shader Renderer::loadShaderFromFile(const char* vShaderFile, const char* fShader
     const char* fShaderCode = fragmentCode.c_str();
     const char* gShaderCode = geometryCode.c_str();
     // 2. now create shader object from source code
+    std::cout << vertexCode << std::endl;
+    std::cout << "------------------------------------------------------" << std::endl;
+    std::cout << fragmentCode << std::endl;
+    std::cout << "------------------------------------------------------" << std::endl;
+
+
     Shader shader;
     shader.Compile(vShaderCode, fShaderCode, gShaderFile != nullptr ? gShaderCode : nullptr);
     return shader;
