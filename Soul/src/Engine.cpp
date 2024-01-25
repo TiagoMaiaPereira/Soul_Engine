@@ -32,6 +32,9 @@ namespace Soul
 		Renderer::Init(window);
 		std::cout << "Renderer initialized!" << std::endl;
 
+		testTexture = Renderer::LoadTexture("Assets/galaxy2.bmp");
+		
+
 		//End init
 		std::cout << "Soul has started! \n" << std::endl;
 		
@@ -43,7 +46,20 @@ namespace Soul
 
 		while (isRunning) //Game Loop
 		{
+			currentTime = (float)SDL_GetTicks();
+			float deltaTime = (currentTime - previousTime) / 1000.f;
+			previousTime = currentTime;
+
+			frameTime += deltaTime;
+
 			HandleEvents();
+
+			//GameWorld Refresh
+			//PhysWorld Update
+			//Game World Update
+
+			Render();
+
 		}
 	}
 
@@ -85,6 +101,13 @@ namespace Soul
 		
 	}
 
+	void Engine::Render()
+	{
+		SDL_RenderClear(Renderer::GetRenderer());
+		SDL_RenderCopy(Renderer::GetRenderer(), testTexture, NULL, NULL);
+		SDL_RenderPresent(Renderer::GetRenderer());
+	}
+
 	void Engine::StopRunning() 
 	{ 
 		isRunning = false;
@@ -98,6 +121,7 @@ namespace Soul
 			SDL_DestroyWindow(window);
 			window = nullptr;
 		};
+		SDL_DestroyRenderer(Renderer::GetRenderer());
 	}
 
 	Engine::Engine(){}

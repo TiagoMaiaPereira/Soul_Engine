@@ -16,6 +16,8 @@ namespace Soul
 
 		void HandleEvents();
 
+		void Render();
+
 		void StopRunning();
 
 		void Clean();
@@ -33,11 +35,12 @@ namespace Soul
 		float currentTime = 0;
 		float frameTime = 0;
 
-		float deltaTime = 0;
 
 		bool isRunning = false;
 
 		SDL_Window* window = nullptr;
+
+		SDL_Texture* testTexture = nullptr;
 
 		SDL_Event event;
 
