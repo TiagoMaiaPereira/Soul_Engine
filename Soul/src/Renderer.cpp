@@ -42,4 +42,8 @@ namespace Soul {
 
 		return texture;
 	}
+	void Renderer::RenderTexture(SDL_Texture* texture, SDL_Rect src, SDL_Rect dest)
+	{
+		SDL_RenderCopy(renderTarget, texture, &src, &dest);
+	}
 }

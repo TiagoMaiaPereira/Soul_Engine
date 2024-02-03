@@ -32,6 +32,11 @@ namespace Soul
 		Renderer::Init(window);
 		std::cout << "Renderer initialized!" << std::endl;
 
+		//Initialize GameLevel
+		world = new GameLevel();
+		std::cout << "World Created!" << std::endl;
+
+		//test texture
 		testTexture = Renderer::LoadTexture("Assets/galaxy2.bmp");
 		
 
@@ -54,9 +59,9 @@ namespace Soul
 
 			HandleEvents();
 
-			//GameWorld Refresh
+			world->Refresh();
 			//PhysWorld Update
-			//Game World Update
+			world->Update(deltaTime);
 
 			Render();
 
@@ -104,7 +109,11 @@ namespace Soul
 	void Engine::Render()
 	{
 		SDL_RenderClear(Renderer::GetRenderer());
+
+		//test texture rendering
 		SDL_RenderCopy(Renderer::GetRenderer(), testTexture, NULL, NULL);
+		//Level Rendering
+		world->Draw();
 		SDL_RenderPresent(Renderer::GetRenderer());
 	}
 

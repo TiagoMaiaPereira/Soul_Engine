@@ -3,6 +3,8 @@
 
 namespace Soul 
 {
+	class GameLevel;
+
 	class Engine {
 	public:
 
@@ -26,6 +28,8 @@ namespace Soul
 
 		static Engine* getEngine() { return instance; }
 
+		GameLevel& getLevel() { return *world; }
+
 	private:
 
 		static Engine* instance;
@@ -44,7 +48,7 @@ namespace Soul
 
 		SDL_Event event;
 
-
+		GameLevel *world = nullptr;
 	};
 
 }

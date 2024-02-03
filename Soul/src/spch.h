@@ -9,6 +9,7 @@
 #include <vector>
 #include <array>
 #include <map>
+#include <bitset>
 
 
 #include "SDL.h"
@@ -19,4 +20,6 @@
 #include "Engine.h"
 #include "Renderer.h"
 #include "GameObject.h"
+#include "Component.h"
+#include "GameLevel.h"
 

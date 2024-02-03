@@ -13,6 +13,10 @@ namespace Soul {
 
 		static SDL_Renderer* GetRenderer() { return renderTarget; }
 
+
+		static void RenderTexture(SDL_Texture* texture, SDL_Rect src, SDL_Rect dest);
+
+
 	private:
 		static SDL_Renderer* renderTarget;
 
