@@ -2,6 +2,7 @@
 #include "Engine.h"
 #include "GameLevel.h"
 #include "PhysWorld.h"
+#include "KeyCodes.h"
 
 namespace Soul 
 {
@@ -81,23 +82,23 @@ namespace Soul
 			else if (event.type == SDL_KEYDOWN) 
 			{
 				switch (event.key.keysym.sym) {
-				case SDLK_a:
+				case SE_KEY_A:
 					std::cout << "The A key was pressed!" << std::endl;
 					break;
 
-				case SDLK_d:
+				case SE_KEY_D:
 					std::cout << "The D key was pressed!" << std::endl;
 					break;
 
-				case SDLK_w:
+				case SE_KEY_W:
 					std::cout << "The W key was pressed!" << std::endl;
 					break;
 
-				case SDLK_s:
+				case SE_KEY_S:
 					std::cout << "The S key was pressed!" << std::endl;
 					break;
 
-				case SDLK_SPACE:
+				case SE_KEY_SPACE:
 					std::cout << "The Space Bar was pressed!" << std::endl;
 					break;
 

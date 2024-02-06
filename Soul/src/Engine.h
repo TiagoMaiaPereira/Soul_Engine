@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Texture.h"
 #include "Renderer.h"
 
 namespace Soul 
@@ -51,6 +51,11 @@ namespace Soul
 		GameLevel *world = nullptr;
 
 		PhysWorld* physWorld = nullptr;
+
+		std::shared_ptr<Texture2D> textures;
+
+
+		glm::mat4 triangle_transformMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(-0.3, 0.3, 0));
 	};
 
 }
