@@ -17,9 +17,15 @@
 #include "box2d.h"
 #include "b2_math.h"
 
-#include "Engine.h"
-#include "Renderer.h"
-#include "GameObject.h"
-#include "Component.h"
-#include "GameLevel.h"
+#include "glm.hpp"
+#include "gtc/matrix_transform.hpp"
+#include "gtc/type_ptr.hpp"
+#include "ext.hpp"
+#include "gtx/string_cast.hpp"
+
+#include "glad/glad.h"
+
+#include"stb_image.h"
+
+
 

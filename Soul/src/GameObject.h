@@ -1,5 +1,6 @@
 #pragma once
 #include "spch.h"
+#include "Component.h"
 
 
 namespace Soul
@@ -67,6 +68,9 @@ namespace Soul
 			auto ptr(componentArray[GetComponentTypeID<T>()]);
 			return *static_cast<T*>(ptr);
 		}
+
+		virtual void OnContact(GameObject* other) {};
+		virtual void OnContactEnd(GameObject* other) {};
 
 	private:
 

@@ -1,4 +1,6 @@
 #include "spch.h"
+#include "GameLevel.h"
+#include "ComponentTypes.h"
 
 
 namespace Soul

@@ -1,4 +1,5 @@
 #include "spch.h"
+#include "Renderer.h"
 
 namespace Soul {
 
@@ -34,6 +35,7 @@ namespace Soul {
 			std::cout << "[Error]: Failed to load the image: " << filePath << std::endl;
 		else
 		{
+			SDL_SetColorKey(surface, SDL_TRUE, SDL_MapRGB(surface->format, 255, 0, 255));
 			texture = SDL_CreateTextureFromSurface(renderTarget, surface);
 			if (texture == NULL)
 				std::cout << "Error" << std::endl;
@@ -42,8 +44,8 @@ namespace Soul {
 
 		return texture;
 	}
-	void Renderer::RenderTexture(SDL_Texture* texture, SDL_Rect src, SDL_Rect dest)
+	void Renderer::RenderTexture(Texture& text)
 	{
-		SDL_RenderCopy(renderTarget, texture, &src, &dest);
+		SDL_RenderCopy(renderTarget, text, text.srcRect, text.destRect);
 	}
 }

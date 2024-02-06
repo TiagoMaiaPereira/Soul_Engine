@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)vendor/sdl2/include;$(ProjectDir)vendor/box2d-main/include/box2d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor/sdl2/include;$(ProjectDir)vendor/box2d-main/include/box2d;$(ProjectDir)vendor/glm;$(ProjectDir)vendor/glad/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +133,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)vendor/sdl2/include;$(ProjectDir)vendor/box2d-main/include/box2d;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor/sdl2/include;$(ProjectDir)vendor/box2d-main/include/box2d;$(ProjectDir)vendor/glm;$(ProjectDir)vendor/glad/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,15 +151,19 @@
   <ItemGroup>
     <ClCompile Include="src\GameLevel.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\PhysWorld.cpp" />
     <ClCompile Include="src\Renderer.cpp" />
     <ClCompile Include="src\Engine.cpp" />
     <ClCompile Include="src\spch.cpp" />
+    <ClCompile Include="src\stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ComponentTypes.h" />
     <ClInclude Include="src\GameLevel.h" />
     <ClInclude Include="src\Component.h" />
     <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\KeyCodes.h" />
+    <ClInclude Include="src\PhysWorld.h" />
     <ClInclude Include="src\Renderer.h" />
     <ClInclude Include="src\Engine.h" />
     <ClInclude Include="src\spch.h" />

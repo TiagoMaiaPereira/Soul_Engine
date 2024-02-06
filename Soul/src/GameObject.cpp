@@ -1,5 +1,5 @@
 #include "spch.h"
-
+#include "GameObject.h"
 
 namespace Soul
 {

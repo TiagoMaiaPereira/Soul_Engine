@@ -1,10 +1,11 @@
 #pragma once
-#include "spch.h"
+
 #include "Renderer.h"
 
 namespace Soul 
 {
 	class GameLevel;
+	class PhysWorld;
 
 	class Engine {
 	public:
@@ -45,11 +46,11 @@ namespace Soul
 
 		SDL_Window* window = nullptr;
 
-		SDL_Texture* testTexture = nullptr;
-
 		SDL_Event event;
 
 		GameLevel *world = nullptr;
+
+		PhysWorld* physWorld = nullptr;
 	};
 
 }

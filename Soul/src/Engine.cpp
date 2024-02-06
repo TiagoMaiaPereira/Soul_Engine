@@ -1,4 +1,7 @@
 #include "spch.h"
+#include "Engine.h"
+#include "GameLevel.h"
+#include "PhysWorld.h"
 
 namespace Soul 
 {
@@ -36,9 +39,10 @@ namespace Soul
 		world = new GameLevel();
 		std::cout << "World Created!" << std::endl;
 
-		//test texture
-		testTexture = Renderer::LoadTexture("Assets/galaxy2.bmp");
-		
+		//Initialize PhysWorld
+		physWorld = new PhysWorld();
+		physWorld->SetWorld(world);
+		std::cout << "Physics Initialized!" << std::endl;
 
 		//End init
 		std::cout << "Soul has started! \n" << std::endl;
@@ -60,7 +64,7 @@ namespace Soul
 			HandleEvents();
 
 			world->Refresh();
-			//PhysWorld Update
+			physWorld->Update(deltaTime);
 			world->Update(deltaTime);
 
 			Render();
@@ -109,10 +113,6 @@ namespace Soul
 	void Engine::Render()
 	{
 		SDL_RenderClear(Renderer::GetRenderer());
-
-		//test texture rendering
-		SDL_RenderCopy(Renderer::GetRenderer(), testTexture, NULL, NULL);
-		//Level Rendering
 		world->Draw();
 		SDL_RenderPresent(Renderer::GetRenderer());
 	}
